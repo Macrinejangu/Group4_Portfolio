@@ -1,4 +1,5 @@
 import { NavLink, Link } from "react-router-dom";
+import './topNav.css';
 
 export default function topNav(){
     return (
