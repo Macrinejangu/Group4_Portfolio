@@ -8,7 +8,7 @@ export default function bottomNav (){
            <div className="footer-brand">
                <span className="brand-name">Group 4</span>
            </div>
-           <div clasName="footer-links">
+           <div className="footer-links">
                <Link to="/">Home</Link>
                <Link to="/profile">Profile</Link>
                <Link to="/projects">Projects</Link>
@@ -16,7 +16,7 @@ export default function bottomNav (){
            </div>
                <div className="footer-socials">
                <a href="#" aria-label="LinkedIn">in</a>
-               <a href="#" arial-label="Github">gh</a>
+               <a href="#" aria-label="Github">gh</a>
                <a href="#" aria-label="X">x</a>   
                </div>
            <p className="footer-copyright">Group 4 Reserves ALL Rights</p>
