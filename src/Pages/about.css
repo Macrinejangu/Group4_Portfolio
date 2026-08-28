@@ -58,12 +58,7 @@
   letter-spacing: -0.035em;
 }
 
-.about-title span {
-  background: linear-gradient(90deg, #6b29d9 0%, #ed4799 55%, #fac726 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
+/* No gradient on the title */
 
 .about-lead,
 .story-card p,
