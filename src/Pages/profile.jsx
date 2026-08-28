@@ -98,48 +98,48 @@ export default function Profile() {
     },
     {
       number: "02",
-      title: "Application Logic",
+      title: "Application Architecture",
       description:
-        "We structure application behavior carefully so that interfaces remain reliable, understandable, and maintainable as products grow.",
+        "We structure application logic and interfaces around clear, maintainable foundations that support reliability as products evolve.",
     },
     {
       number: "03",
       title: "API Integration",
       description:
-        "We connect applications with external services and APIs to extend functionality and turn interfaces into useful working products.",
+        "We connect applications with external services and APIs to extend functionality and deliver integrated digital experiences.",
     },
     {
       number: "04",
       title: "Technical Problem Solving",
       description:
-        "We approach implementation challenges systematically, breaking complex requirements into practical and manageable solutions.",
+        "We approach complex implementation challenges systematically, translating requirements into practical and dependable technical solutions.",
     },
   ];
 
   const collaboration = [
     {
       number: "01",
-      title: "Understand",
+      title: "Discover",
       description:
-        "We begin by clarifying the problem, requirements, users, and expected outcome before writing code.",
+        "We establish the problem, objectives, user requirements, and technical considerations that shape the product from the outset.",
     },
     {
       number: "02",
-      title: "Divide",
+      title: "Plan",
       description:
-        "We organize the work into focused responsibilities so each contributor can work effectively while keeping the larger product in view.",
+        "We define responsibilities, structure the solution, and establish shared technical and design standards before implementation begins.",
     },
     {
       number: "03",
       title: "Build",
       description:
-        "We implement our assigned components while following shared conventions for structure, styling, and functionality.",
+        "We develop focused, maintainable solutions while maintaining consistency across the product's architecture, interface, and functionality.",
     },
     {
       number: "04",
       title: "Review",
       description:
-        "We bring the pieces together, review the implementation, identify inconsistencies, and refine the final product as a team.",
+        "We evaluate the implementation as a whole, identify areas for improvement, and refine the product to meet its intended standard.",
     },
   ];
 
@@ -161,9 +161,9 @@ export default function Profile() {
         <h1 className="profile-title">The Developers Behind Group 4</h1>
 
         <p className="profile-subtitle">
-          A collaborative team of developers building reliable, responsive, and
-          purposeful digital products with a focus on quality, maintainability,
-          and real-world usability.
+          A collaborative team building reliable, responsive, and purposeful
+          digital products with a focus on quality, maintainability, and
+          meaningful user experiences.
         </p>
       </section>
 
@@ -251,11 +251,12 @@ export default function Profile() {
         <div className="profile-section-heading">
           <div className="section-label">COLLECTIVE STRENGTH</div>
 
-          <h2>More Than Individual Skills</h2>
+          <h2>Capabilities That Work Together</h2>
 
           <p>
-            Our strength comes from combining different areas of technical
-            capability into one collaborative development process.
+            Our combined capabilities span interface development, application
+            architecture, integrations, and technical problem solving, allowing
+            us to approach digital products from multiple perspectives.
           </p>
         </div>
 
@@ -280,8 +281,9 @@ export default function Profile() {
           <h2>How We Work Together</h2>
 
           <p>
-            We treat development as a collaborative process where individual
-            contributions come together to form one coherent product.
+            We use a structured product development process that keeps
+            requirements clear, responsibilities aligned, and implementation
+            consistent from initial discovery through final refinement.
           </p>
         </div>
 
@@ -306,9 +308,9 @@ export default function Profile() {
           <h2>Built Around Practical Outcomes</h2>
 
           <p>
-            We focus on turning requirements and ideas into digital products
-            that are functional, responsive, maintainable, and useful to the
-            people who interact with them.
+            We translate ideas and requirements into digital products designed
+            to be functional, responsive, maintainable, and valuable to the
+            people who use them.
           </p>
         </div>
 
@@ -331,8 +333,8 @@ export default function Profile() {
           <h2>See What We Build Together.</h2>
 
           <p>
-            Explore the projects where our technical skills, collaborative
-            process, and practical approach come together.
+            Explore the projects where our technical capabilities, collaborative
+            process, and product-focused approach come together.
           </p>
         </div>
 
