@@ -1,0 +1,79 @@
+.top-nav {
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 16px 32px;
+background: 
+#FFFFFF;
+border-bottom: 1px solid 
+#F5F2FA;
+font-family: 'Montserrat', sans-serif;
+}
+
+.brand {
+display: flex;
+align-items: center;
+gap: 8px;
+}
+.brand .logo-mark {
+width: 32px;
+height: 32px;
+border-radius: 8px;
+background: linear-gradient(135deg, 
+#6B29D9, 
+#ED4799);
+display: inline-block;
+}
+
+.brand .brand-name {
+font-family: 'Poppins', sans-serif;
+font-weight: 700;
+font-size: 18px;
+color: 
+#6B29D9;
+}
+
+.nav-links {
+display: flex;
+gap: 24px;
+}
+.nav-links a {
+font-family: 'Montserrat', sans-serif;
+font-weight: 500;
+font-size: 14px;
+color: 
+#8C8C99;
+text-decoration: none;
+padding: 4px 0;
+}
+
+.nav-links a.active {
+color: 
+#ED4799;
+font-weight: 600;
+}
+
+.nav-links a:hover {
+color: 
+#6B29D9;
+}
+.cta-button {
+font-family: 'Montserrat', sans-serif;
+font-weight: 500;
+font-size: 14px;
+color: 
+#6B29D9;
+border: 1.5px solid 
+#6B29D9;
+border-radius: 9999px;
+padding: 8px 24px;
+text-decoration: none;
+transition: background 0.2s ease, color 0.2s ease;
+}
+
+.cta-button:hover {
+background: 
+#6B29D9;
+color: 
+#FFFFFF;
+}

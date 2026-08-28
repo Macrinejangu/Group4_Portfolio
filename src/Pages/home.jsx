@@ -1,6 +1,8 @@
 
 
 import "./home.css"
+import layout from "../Components/layout"
+
 export default function Home() {
 
     return(
@@ -96,7 +98,7 @@ export default function Home() {
 
         </div>
         <div className="Home_team_text">
-          <h3>Four Innovators, One Goal</h3>
+          <h3>Five Innovators, One Goal</h3>
           <p>Originating from varied engineering, designs, and analytics backgrounds,
             Group 4 represents the intersection of robust development and aesthetic 
             polish. We approach every capstone and hackathon project with critical rigor

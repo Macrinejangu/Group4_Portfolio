@@ -1,3 +1,6 @@
+import "./projects.css"
+import layout from "../Components/layout"
+
 export default function Projects() {
 return (
 <div>

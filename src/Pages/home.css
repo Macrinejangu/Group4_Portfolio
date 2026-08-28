@@ -1,5 +1,12 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Poppins:wght@600;700&display=swap');
 
+html,
+body {
+    margin: 0;
+    background-color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+}
 
 .Home_intro {
     min-height: 90vh;
@@ -8,7 +15,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    background-color: #f8f9f7;
+    background: radial-gradient(circle at 30% 20%, #2a1a4a 0%, #16102b 55%, #120c22 100%);
 }
 
 .Home_main {
@@ -16,15 +23,19 @@
 }
 
 .Home_main h1 {
+    font-family: 'Poppins', sans-serif;
     font-size: 64px;
     line-height: 1.05;
     font-weight: 700;
     margin: 0 0 25px 0;
-    color: #17211b;
+    color: #ffffff;
 }
 
 .Home_accent {
-    color: #4f8f5b;
+    background: linear-gradient(90deg, #ff4fd8, #a855f7);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 
 .Home_intro > div:nth-child(2) {
@@ -35,7 +46,7 @@
     font-size: 18px;
     line-height: 1.7;
     font-weight: 400;
-    color: #68736c;
+    color: #b7aed1;
     margin-bottom: 35px;
 }
 
@@ -52,36 +63,37 @@
 }
 
 .Explore {
-    background-color: #17211b;
+    background: linear-gradient(90deg, #a855f7, #ec4899);
     color: white;
-    border: 2px solid #17211b;
+    border: 2px solid transparent;
 }
 
 .Explore:hover {
-    background-color: #4f8f5b;
-    border-color: #4f8f5b;
+    background: linear-gradient(90deg, #9333ea, #db2777);
+    border-color: transparent;
 }
 
 .Team {
     background-color: transparent;
-    color: #17211b;
-    border: 2px solid #17211b;
+    color: #ffffff;
+    border: 2px solid #4b3b6b;
 }
 
 .Team:hover {
-    background-color: #17211b;
-    color: white;
+    background-color: #2a1f45;
+    border-color: #a855f7;
 }
 
 
 .Home_featured {
     padding: 90px 8%;
-    background-color: white;
+    background-color: #ffffff;
 }
 
 .Home_projects h3 {
+    font-family: 'Poppins', sans-serif;
     font-size: 38px;
-    color: #17211b;
+    color: #1a1130;
     margin: 0 0 10px 0;
 }
 
@@ -92,32 +104,46 @@
 .Home_direct h6 {
     font-size: 16px;
     font-weight: 400;
-    color: #737d76;
+    color: #767085;
     margin: 0;
 }
 
 
+/* Grid layout: heading/subtitle span the full row,
+   the three project divs sit side by side as grid items.
+   (No JSX/markup changes needed.) */
 
+.Home_featured {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 28px;
+}
+
+.Home_projects,
+.Home_direct {
+    grid-column: 1 / -1;
+}
 
 .Home_project1,
 .Home_project2,
 .Home_project3 {
+    box-sizing: border-box;
     display: flex;
-    align-items: center;
-    gap: 45px;
-    margin-bottom: 45px;
-    padding: 25px;
-    border: 1px solid #e3e7e4;
-    border-radius: 12px;
-    background-color: #fafbfa;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #ece8f2;
+    border-radius: 14px;
+    background-color: #fbfaff;
     transition: 0.3s ease;
+    overflow: hidden;
 }
 
 .Home_project1:hover,
 .Home_project2:hover,
 .Home_project3:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transform: translateY(-6px);
+    box-shadow: 0 15px 30px rgba(88, 28, 135, 0.12);
 }
 
 
@@ -126,10 +152,10 @@
 .Home_project1 img,
 .Home_project2 img,
 .Home_project3 img {
-    width: 45%;
-    height: 280px;
+    width: 100%;
+    height: 170px;
     object-fit: cover;
-    border-radius: 8px;
+    border-radius: 0;
 }
 
 
@@ -139,32 +165,52 @@
 .Project2_content,
 .Project3_content {
     flex: 1;
+    padding: 20px;
 }
 
 .Project1_content p:first-child,
 .Project2_content p:first-child,
 .Project3_content p:first-child {
-    color: #4f8f5b;
-    font-size: 13px;
-    font-weight: 600;
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
+    padding: 4px 10px;
+    border-radius: 12px;
+    margin: 0 0 12px 0;
+}
+
+.Project1_content p:first-child {
+    background-color: #ffe4ef;
+    color: #ec4899;
+}
+
+.Project2_content p:first-child {
+    background-color: #e6f6ec;
+    color: #16a34a;
+}
+
+.Project3_content p:first-child {
+    background-color: #ede4ff;
+    color: #8b5cf6;
 }
 
 .Project1_content h4,
 .Project2_content h4,
 .Project3_content h4 {
-    font-size: 25px;
-    color: #17211b;
-    margin: 12px 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: #1a1130;
+    margin: 0 0 10px 0;
 }
 
 .Project1_content p,
 .Project2_content p,
 .Project3_content p {
-    font-size: 15px;
-    line-height: 1.7;
-    color: #6b756e;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #6b6577;
 }
 
 .Project1_content a,
@@ -172,29 +218,29 @@
 .Project3_content a {
     display: inline-block;
     margin-top: 15px;
-    color: #17211b;
+    color: #8b5cf6;
     font-size: 14px;
     font-weight: 600;
     text-decoration: none;
-    border-bottom: 1px solid #17211b;
-    padding-bottom: 3px;
+    border-bottom: none;
+    padding-bottom: 0;
 }
 
 .Project1_content a:hover,
 .Project2_content a:hover,
 .Project3_content a:hover {
-    color: #4f8f5b;
-    border-color: #4f8f5b;
+    color: #ec4899;
 }
 
 
 
 .Home_team {
+    clear: both;
     padding: 90px 8%;
     display: flex;
     align-items: center;
     gap: 70px;
-    background-color: #f1f4f1;
+    background-color: #f6f3fb;
 }
 
 .Home_team_image {
@@ -214,8 +260,9 @@
 }
 
 .Home_team_text h3 {
+    font-family: 'Poppins', sans-serif;
     font-size: 38px;
-    color: #17211b;
+    color: #1a1130;
     margin-bottom: 20px;
 }
 
@@ -244,25 +291,18 @@
 
     .Home_featured {
         padding: 60px 6%;
+        grid-template-columns: 1fr;
+        row-gap: 25px;
     }
 
     .Home_projects h3 {
         font-size: 30px;
     }
 
-    .Home_project1,
-    .Home_project2,
-    .Home_project3 {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 25px;
-    }
-
     .Home_project1 img,
     .Home_project2 img,
     .Home_project3 img {
-        width: 100%;
-        height: 230px;
+        height: 220px;
     }
 
     .Home_team {
