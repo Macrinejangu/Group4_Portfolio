@@ -3,82 +3,88 @@ import "./profile.css";
 export default function Profile() {
   const teamMembers = [
     {
-      id: "alex",
-      name: "Alex Rivera",
-      role: "Lead Frontend Engineer",
-      expertise: "React Architecture & State Logic",
+      id: "clive",
+      name: "Clive Malcom Kyaligamba",
+      role: "Developer",
+      expertise: "Web Development & Digital Solutions",
       avatar:
-        "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&auto=format&fit=crop&q=80",
+        "https://api.dicebear.com/10.x/notionists-neutral/svg?seed=Clive%20Malcom%20Kyaligamba&backgroundColor=f5f2fa",
       description:
-        "Leads application architecture, responsive state coordination, and modern component lifecycle engineering across our digital product portfolio.",
-      skills: [
-        "React",
-        "JavaScript (ES6+)",
-        "Web APIs",
-        "Component Architecture",
-      ],
+        "Develops reliable web solutions with a focus on maintainable code, responsive interfaces, and practical implementation of product requirements.",
+      skills: ["JavaScript", "React", "Web Development", "API Integration"],
       socials: {
         github: "https://github.com",
         linkedin: "https://linkedin.com",
-        email: "alex@group4solutions.com",
+        email: "clive@group4solutions.com",
       },
     },
     {
-      id: "sophia",
-      name: "Sophia Chen",
-      role: "UI/UX & Design Systems Lead",
-      expertise: "Figma Systems & Typography Hierarchy",
+      id: "macrine",
+      name: "Jangu, Macrine",
+      role: "Developer",
+      expertise: "Frontend Development & User Interfaces",
       avatar:
-        "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&auto=format&fit=crop&q=80",
+        "https://api.dicebear.com/10.x/notionists-neutral/svg?seed=Macrine%20Jangu&backgroundColor=f5f2fa",
       description:
-        "Engineers intuitive design systems, accessible UI interactions, and visual layouts to deliver polished, human-centered web experiences.",
-      skills: [
-        "Figma",
-        "UI/UX Design",
-        "CSS Architecture",
-        "Interaction Design",
-      ],
+        "Builds responsive and accessible interfaces with attention to usability, consistency, and reliable performance across modern devices and environments.",
+      skills: ["React", "JavaScript", "Responsive Design", "UI Development"],
       socials: {
         github: "https://github.com",
         linkedin: "https://linkedin.com",
-        email: "sophia@group4solutions.com",
+        email: "macrine@group4solutions.com",
       },
     },
     {
-      id: "marcus",
-      name: "Marcus Vance",
-      role: "Frontend Data & Verification Engineer",
-      expertise: "Graph Visualization & Logic Engines",
+      id: "diana",
+      name: "Mwangi, Diana",
+      role: "Developer",
+      expertise: "Frontend Development & Application Logic",
       avatar:
-        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&auto=format&fit=crop&q=80",
+        "https://api.dicebear.com/10.x/notionists-neutral/svg?seed=Diana%20Mwangi&backgroundColor=f5f2fa",
       description:
-        "Develops client-side data parsing, topological graph connection algorithms, and engagement verification tools for analytical applications.",
-      skills: ["JavaScript", "React", "Data Structures", "Graph Algorithms"],
+        "Develops structured and responsive web applications, working across interfaces, application logic, and integrations to deliver dependable products for real-world use.",
+      skills: ["JavaScript", "React", "Web Applications", "Application Logic"],
       socials: {
         github: "https://github.com",
         linkedin: "https://linkedin.com",
-        email: "marcus@group4solutions.com",
+        email: "diana@group4solutions.com",
       },
     },
     {
-      id: "elena",
-      name: "Elena Rostova",
-      role: "Frontend Engineer & Quality Lead",
-      expertise: "Performance & Cross-Browser Standards",
+      id: "joe",
+      name: "Mwangi, Joe",
+      role: "Developer",
+      expertise: "Web Applications & Technical Implementation",
       avatar:
-        "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=400&auto=format&fit=crop&q=80",
+        "https://api.dicebear.com/10.x/notionists-neutral/svg?seed=Mwangi%20Joe&backgroundColor=f5f2fa",
       description:
-        "Ensures flawless rendering, strict accessibility compliance, and silky smooth client interactions across mobile and desktop devices.",
+        "Works on the implementation of scalable web solutions, combining clean development practices with practical problem solving to support reliable digital products.",
       skills: [
-        "React",
         "JavaScript",
-        "Responsive Web Design",
-        "Quality Assurance",
+        "React",
+        "Web Applications",
+        "Technical Implementation",
       ],
       socials: {
         github: "https://github.com",
         linkedin: "https://linkedin.com",
-        email: "elena@group4solutions.com",
+        email: "joe@group4solutions.com",
+      },
+    },
+    {
+      id: "enoch",
+      name: "Mwenda, Enoch",
+      role: "Developer",
+      expertise: "Web Development & Technical Solutions",
+      avatar:
+        "https://api.dicebear.com/10.x/notionists-neutral/svg?seed=Mwenda%20Enoch&backgroundColor=f5f2fa",
+      description:
+        "Contributes to the development of dependable digital products through structured implementation, responsive development, and attention to practical technical requirements.",
+      skills: ["JavaScript", "React", "Web Development", "Technical Solutions"],
+      socials: {
+        github: "https://github.com",
+        linkedin: "https://linkedin.com",
+        email: "enoch@group4solutions.com",
       },
     },
   ];
@@ -88,15 +94,12 @@ export default function Profile() {
       <section className="profile-hero">
         <div className="tag-pill">Our People</div>
 
-        <h1 className="profile-title">
-          The Engineering Talent Driving{" "}
-          <span className="purple-gradient-text">Group 4</span>
-        </h1>
+        <h1 className="profile-title">The Developers Behind Group 4</h1>
 
         <p className="profile-subtitle">
-          A dedicated team of specialized software engineers and design
-          architects collaborating to build purposeful digital products and
-          verification tools.
+          A collaborative team of developers building reliable, responsive, and
+          purposeful digital products with a focus on quality, maintainability,
+          and real-world usability.
         </p>
       </section>
 
@@ -108,7 +111,7 @@ export default function Profile() {
                 <div className="avatar-wrapper">
                   <img
                     src={member.avatar}
-                    alt={member.name}
+                    alt={`${member.name} avatar`}
                     className="member-avatar"
                     loading="lazy"
                   />
@@ -172,8 +175,6 @@ export default function Profile() {
                     <span className="social-mark">@</span>
                   </a>
                 </div>
-
-                <span className="member-company-tag">Group 4 Core</span>
               </div>
             </article>
           ))}
