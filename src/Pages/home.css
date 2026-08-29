@@ -1,0 +1,328 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Poppins:wght@600;700&display=swap');
+
+html,
+body {
+    margin: 0;
+    background-color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.Home_intro {
+    min-height: 90vh;
+    padding: 80px 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background: radial-gradient(circle at 30% 20%, #2a1a4a 0%, #16102b 55%, #120c22 100%);
+}
+
+.Home_main {
+    max-width: 850px;
+}
+
+.Home_main h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 64px;
+    line-height: 1.05;
+    font-weight: 700;
+    margin: 0 0 25px 0;
+    color: #ffffff;
+}
+
+.Home_accent {
+    background: linear-gradient(90deg, #ff4fd8, #a855f7);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.Home_intro > div:nth-child(2) {
+    max-width: 650px;
+}
+
+.Home_intro h4 {
+    font-size: 18px;
+    line-height: 1.7;
+    font-weight: 400;
+    color: #b7aed1;
+    margin-bottom: 35px;
+}
+
+
+.Explore,
+.Team {
+    padding: 14px 28px;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-right: 12px;
+    transition: 0.3s ease;
+}
+
+.Explore {
+    background: linear-gradient(90deg, #a855f7, #ec4899);
+    color: white;
+    border: 2px solid transparent;
+}
+
+.Explore:hover {
+    background: linear-gradient(90deg, #9333ea, #db2777);
+    border-color: transparent;
+}
+
+.Team {
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid #4b3b6b;
+}
+
+.Team:hover {
+    background-color: #2a1f45;
+    border-color: #a855f7;
+}
+
+
+.Home_featured {
+    padding: 90px 8%;
+    background-color: #ffffff;
+}
+
+.Home_projects h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 38px;
+    color: #1a1130;
+    margin: 0 0 10px 0;
+}
+
+.Home_direct {
+    margin-bottom: 45px;
+}
+
+.Home_direct h6 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #767085;
+    margin: 0;
+}
+
+
+/* Grid layout: heading/subtitle span the full row,
+   the three project divs sit side by side as grid items.
+   (No JSX/markup changes needed.) */
+
+.Home_featured {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 28px;
+}
+
+.Home_projects,
+.Home_direct {
+    grid-column: 1 / -1;
+}
+
+.Home_project1,
+.Home_project2,
+.Home_project3 {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #ece8f2;
+    border-radius: 14px;
+    background-color: #fbfaff;
+    transition: 0.3s ease;
+    overflow: hidden;
+}
+
+.Home_project1:hover,
+.Home_project2:hover,
+.Home_project3:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 30px rgba(88, 28, 135, 0.12);
+}
+
+
+/* Project images */
+
+.Home_project1 img,
+.Home_project2 img,
+.Home_project3 img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 0;
+}
+
+
+/* Project content */
+
+.Project1_content,
+.Project2_content,
+.Project3_content {
+    flex: 1;
+    padding: 20px;
+}
+
+.Project1_content p:first-child,
+.Project2_content p:first-child,
+.Project3_content p:first-child {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 4px 10px;
+    border-radius: 12px;
+    margin: 0 0 12px 0;
+}
+
+.Project1_content p:first-child {
+    background-color: #ffe4ef;
+    color: #ec4899;
+}
+
+.Project2_content p:first-child {
+    background-color: #e6f6ec;
+    color: #16a34a;
+}
+
+.Project3_content p:first-child {
+    background-color: #ede4ff;
+    color: #8b5cf6;
+}
+
+.Project1_content h4,
+.Project2_content h4,
+.Project3_content h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: #1a1130;
+    margin: 0 0 10px 0;
+}
+
+.Project1_content p,
+.Project2_content p,
+.Project3_content p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #6b6577;
+}
+
+.Project1_content a,
+.Project2_content a,
+.Project3_content a {
+    display: inline-block;
+    margin-top: 15px;
+    color: #8b5cf6;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.Project1_content a:hover,
+.Project2_content a:hover,
+.Project3_content a:hover {
+    color: #ec4899;
+}
+
+
+
+.Home_team {
+    clear: both;
+    padding: 90px 8%;
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    background-color: #f6f3fb;
+}
+
+.Home_team_image {
+    flex: 1;
+}
+
+.Home_team_image img {
+    width: 100%;
+    max-width: 550px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.Home_team_text {
+    flex: 1;
+}
+
+.Home_team_text h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 38px;
+    color: #1a1130;
+    margin-bottom: 20px;
+}
+
+.Home_team_text p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #68736c;
+    max-width: 550px;
+}
+
+
+@media (max-width: 768px) {
+
+    .Home_intro {
+        padding: 60px 6%;
+        min-height: 80vh;
+    }
+
+    .Home_main h1 {
+        font-size: 43px;
+    }
+
+    .Home_intro h4 {
+        font-size: 16px;
+    }
+
+    .Home_featured {
+        padding: 60px 6%;
+        grid-template-columns: 1fr;
+        row-gap: 25px;
+    }
+
+    .Home_projects h3 {
+        font-size: 30px;
+    }
+
+    .Home_project1 img,
+    .Home_project2 img,
+    .Home_project3 img {
+        height: 220px;
+    }
+
+    .Home_team {
+        padding: 60px 6%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 40px;
+    }
+
+    .Home_team_image,
+    .Home_team_text {
+        width: 100%;
+    }
+
+    .Home_team_image img {
+        max-width: 100%;
+        height: 300px;
+    }
+
+    .Home_team_text h3 {
+        font-size: 30px;
+    }
+}
