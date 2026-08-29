@@ -12,6 +12,7 @@ export default function bottomNav (){
                <Link to="/">Home</Link>
                <Link to="/profile">Profile</Link>
                <Link to="/projects">Projects</Link>
+               <Link to="/about">About</Link>
                <Link to="/contact">Contact</Link>
            </div>
                <div className="footer-socials">
