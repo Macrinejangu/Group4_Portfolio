@@ -1,5 +1,4 @@
-
-
+import { NavLink } from "react-router-dom";
 import "./home.css"
 import layout from "../Components/layout"
 
@@ -16,8 +15,16 @@ export default function Home() {
             <h4>We are collaborative student team fusing human-centered design,
                 deep data verification and beautiful tech to solve real world problems</h4>
         </div>
-        <button type="button" className="Explore">Explore Projects</button>
-        <button type="button" className="Team">About Team</button>
+
+        <div className="Home_actions">
+            <NavLink to="/projects" className="Explore">
+                Explore Projects
+            </NavLink>
+
+            <NavLink to="/profile" className="Team">
+                About Team
+            </NavLink>
+        </div>
         
        </div>
 
@@ -93,25 +100,25 @@ export default function Home() {
         <div className="Home_team_image">
             <img 
             src="https://tse2.mm.bing.net/th/id/OIP.noGOVc7XQWFc2R2ZcKmapQHaHa?r=0&pid=Api&h=220&P=0"
-             alt="Four team members working together"
+             alt="Four team members working together" 
              />
-
-        </div>
-        <div className="Home_team_text">
-          <h3>Five Innovators, One Goal</h3>
-          <p>Originating from varied engineering, designs, and analytics backgrounds,
-            Group 4 represents the intersection of robust development and aesthetic 
-            polish. We approach every capstone and hackathon project with critical rigor
-          </p>
-
-        </div>    
-
-    </div>
-
-
-
-</>
-
-);
-    
+ 
+        </div> 
+        <div className="Home_team_text"> 
+          <h3>Five Innovators, One Goal</h3> 
+          <p>Originating from varied engineering, designs, and analytics backgrounds, 
+            Group 4 represents the intersection of robust development and aesthetic  
+            polish. We approach every capstone and hackathon project with critical rigor 
+          </p> 
+ 
+        </div>     
+ 
+    </div> 
+ 
+ 
+ 
+</> 
+ 
+); 
+     
 }
